@@ -27,13 +27,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+    .forEach and .map are both advanced array methods and are very similar to eachother with a few key differences. .forEach does not create a new array, so when working with it in order to see the code you have to declare an empty array and push to that one. .forEach also HAS to loop through everything in the array without stopping and the return statement is optional here. .map on the other hand will automatically create a new array and does not change the original. It also does need the return keyword. Despite these differences, the syntax of these methods is almost identical.
+
 2. Explain the difference between a callback and a higher order function.
+
+    A HOF is an advanced function that can take in (pass) another function as an object or argument, while a callback function is the function get passed through the HOF.
 
 3. What is closure?
 
+    Closure is when a function reaches outside its own scope to access the variables in the parent funcion above it. In essence closure is the ability to access from bottom up. a function can't access any of the variables under it, but everything above it is fair game.
+
 4. Describe the four rules of the 'this' keyword.
 
+    The four rules of the 'this' keyword are window binding, implicit binding, explicit binding, and new binding. Window binding is only used when no other rules apply and is thus global. Implicit binding is what is most often used and applies to methods. The rule of thumb is to look to the left of the . and thats what 'this' applies to. Explicit binding uses call, bind, and apply to explicitly tell JS what this is being applied to. The last rule is new binding and is used for constructor functions to point to the newly created object.
+
 5. Why do we need super() in an extended class?
+
+    Super works with extend to do what object.create and parent.call did. essentially it specifies the new attributes or methods that the extended class now has access to.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
